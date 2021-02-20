@@ -1,0 +1,14 @@
+projects:
+  minimum02313db8f7dff:
+    schemaPath: >-
+      Users/stevekriz/Desktop/minimum-02313db8f7dfff138c9a4466e94126e5a53432f7/graphql/schema.json
+    includes:
+      - ./src/graphql/**/*.js
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: javascript
+        generatedFileName: ''
+        docsFilePath: >-
+          /Users/stevekriz/Desktop/minimum-02313db8f7dfff138c9a4466e94126e5a53432f7/graphql

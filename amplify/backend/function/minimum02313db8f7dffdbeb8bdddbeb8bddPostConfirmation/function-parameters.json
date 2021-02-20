@@ -1,0 +1,17 @@
+{
+  "trigger": true,
+  "modules": [
+    "custom"
+  ],
+  "parentResource": "minimum02313db8f7dffdbeb8bdddbeb8bdd",
+  "functionName": "minimum02313db8f7dffdbeb8bdddbeb8bddPostConfirmation",
+  "resourceName": "minimum02313db8f7dffdbeb8bdddbeb8bddPostConfirmation",
+  "parentStack": "auth",
+  "triggerEnvs": [],
+  "triggerDir": "/Users/stevekriz/.nvm/versions/node/v14.15.4/lib/node_modules/@aws-amplify/cli/node_modules/amplify-category-auth/provider-utils/awscloudformation/triggers/PostConfirmation",
+  "triggerTemplate": "PostConfirmation.json.ejs",
+  "triggerEventPath": "PostConfirmation.event.json",
+  "roleName": "minimum02313db8f7dffdbeb8bdddbeb8bddPostConfirmation",
+  "skipEdit": true,
+  "enableCors": false
+}

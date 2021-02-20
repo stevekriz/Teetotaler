@@ -1,0 +1,12 @@
+{
+  "name": "Teetotaler",
+  "displayName": "Teetotaler",
+  "expo": {
+    "name": "Teetotaler",
+    "slug": "Teetotaler",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
