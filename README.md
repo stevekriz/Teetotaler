@@ -1,4 +1,4 @@
-# Application to Hire a Driver
+# A Mobile Application to Hire a Driver
 
 Snapshots:
   <p align="center">
