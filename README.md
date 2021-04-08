@@ -1,6 +1,7 @@
 # A Mobile Application to Hire a Driver
 
 Snapshots:
+
   <p align="center">
     <img src="./snippets/1.png" width="30%">
   </p>

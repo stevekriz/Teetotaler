@@ -15,10 +15,7 @@
           "category": "function",
           "resourceName": "minimum02313db8f7dffdbeb8bdddbeb8bddPostConfirmation",
           "triggerProvider": "Cognito",
-          "attributes": [
-            "Arn",
-            "Name"
-          ]
+          "attributes": ["Arn", "Name"]
         }
       ],
       "customAuth": false

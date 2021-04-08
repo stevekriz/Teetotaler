@@ -1,15 +1,15 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: 'black',
+    backgroundColor: "black",
     padding: 10,
     margin: 10,
-    alignItems: 'center',
+    alignItems: "center",
   },
   text: {
-    color: 'white',
-    fontWeight: 'bold',
+    color: "white",
+    fontWeight: "bold",
   },
 });
 

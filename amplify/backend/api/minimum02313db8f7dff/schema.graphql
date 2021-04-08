@@ -16,7 +16,8 @@ type Car @model {
   orders: [Order] @connection(keyName: "byCar", fields: ["id"])
 }
 
-type Order @model
+type Order
+  @model
   @key(name: "byUser", fields: ["userId"])
   @key(name: "byCar", fields: ["carId", "createdAt"]) {
   id: ID!

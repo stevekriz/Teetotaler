@@ -3,7 +3,7 @@ module.exports = {
     blacklistRE: /#current-cloud-backend\/.*/,
   },
   transformer: {
-    assetPlugins: ['expo-asset/tools/hashAssetFiles'],
+    assetPlugins: ["expo-asset/tools/hashAssetFiles"],
     getTransformOptions: async () => ({
       transform: {
         experimentalImportSupport: false,
