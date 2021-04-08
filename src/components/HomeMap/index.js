@@ -25,15 +25,10 @@ const HomeMap = () => {
   }, []);
 
   const getImage = (id) => {
-    if (id === "ee7ed2f1-2b8f-47a9-bdcc-4cc37b0bc5fb") {
-      return Aica;
-    }
-    if (id === "3a042d74-eb14-4733-883c-7c2b8415dae4") {
-      return Darien;
-    }
-    if (id === "19178ff4-ca16-42a6-a86a-3269734547b2") {
-      return Denise;
-    }
+    if (id === "ee7ed2f1-2b8f-47a9-bdcc-4cc37b0bc5fb") return Aica;
+    if (id === "3a042d74-eb14-4733-883c-7c2b8415dae4") return Darien;
+    if (id === "19178ff4-ca16-42a6-a86a-3269734547b2") return Denise;
+
     return Jacob;
   };
 

@@ -111,11 +111,7 @@ const CustomDrawer = (props) => (
 
     <DrawerItemList {...props} />
 
-    <Pressable
-      onPress={() => {
-        Auth.signOut();
-      }}
-    >
+    <Pressable onPress={() => Auth.signOut()}>
       <Text style={{ padding: 5, paddingLeft: 19, color: "red" }}>
         Sign Out
       </Text>

@@ -12,12 +12,9 @@ const PersonRow = (props) => {
   const { person, onPress, isSelected } = props;
 
   const getImage = () => {
-    if (person.name === "Denise") {
-      return Denise;
-    }
-    if (person.name === "Jacob") {
-      return Jacob;
-    }
+    if (person.name === "Denise") return Denise;
+    if (person.name === "Jacob") return Jacob;
+
     return Aica;
   };
 

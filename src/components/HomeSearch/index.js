@@ -11,9 +11,7 @@ import styles from "./styles";
 const HomeSearch = () => {
   const navigation = useNavigation();
 
-  const goToSearch = () => {
-    navigation.navigate("DestinationSearch");
-  };
+  const goToSearch = () => navigation.navigate("DestinationSearch");
 
   return (
     <View>

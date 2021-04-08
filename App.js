@@ -35,22 +35,17 @@ const App = () => {
           buttonPositive: "OK",
         }
       );
-      if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+      if (granted === PermissionsAndroid.RESULTS.GRANTED)
         console.log("You can use the location");
-      } else {
-        console.log("Location permission denied");
-      }
+      else console.log("Location permission denied");
     } catch (err) {
       console.warn(err);
     }
   };
 
   useEffect(() => {
-    if (Platform.OS === "android") {
-      androidPermissions();
-    } else {
-      Geolocation.requestAuthorization();
-    }
+    if (Platform.OS === "android") androidPermissions();
+    else Geolocation.requestAuthorization();
   }, []);
 
   return (
