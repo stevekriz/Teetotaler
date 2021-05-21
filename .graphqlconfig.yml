@@ -9,6 +9,6 @@ projects:
     extensions:
       amplify:
         codeGenTarget: javascript
-        generatedFileName: ""
+        generatedFileName: ''
         docsFilePath: >-
           /Users/stevekriz/Desktop/minimum-02313db8f7dfff138c9a4466e94126e5a53432f7/graphql

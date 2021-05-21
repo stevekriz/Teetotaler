@@ -1,17 +1,17 @@
-import React from "react";
-import { View, Text, Pressable } from "react-native";
-import PropTypes from "prop-types";
+import React from 'react';
+import { View, Text, Pressable } from 'react-native';
+import PropTypes from 'prop-types';
 
-import PersonRow from "../PersonRow";
-import peopleData from "../../assets/data/people";
+import PersonRow from '../PersonRow';
+import peopleData from '../../assets/data/people';
 
-import styles from "./styles";
+import styles from './styles';
 
 const People = ({ typeState, onSubmit }) => {
   const [selectedType, setSelectedType] = typeState;
   return (
     <View>
-      {peopleData.map((person) => (
+      {peopleData.map(person => (
         <PersonRow
           key={person.id}
           person={person}

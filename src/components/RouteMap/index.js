@@ -1,9 +1,9 @@
-import React from "react";
-import MapView, { PROVIDER_GOOGLE, Marker } from "react-native-maps";
-import MapViewDirections from "react-native-maps-directions";
-import PropTypes from "prop-types";
+import React from 'react';
+import MapView, { PROVIDER_GOOGLE, Marker } from 'react-native-maps';
+import MapViewDirections from 'react-native-maps-directions';
+import PropTypes from 'prop-types';
 
-const GOOGLE_MAPS_APIKEY = "";
+const GOOGLE_MAPS_APIKEY = '';
 
 const RouteMap = ({ origin, destination }) => {
   const originLoc = {
@@ -17,7 +17,7 @@ const RouteMap = ({ origin, destination }) => {
 
   return (
     <MapView
-      style={{ width: "100%", height: "100%" }}
+      style={{ width: '100%', height: '100%' }}
       provider={PROVIDER_GOOGLE}
       showsUserLocation
       initialRegion={{
@@ -32,10 +32,10 @@ const RouteMap = ({ origin, destination }) => {
         destination={destinationLoc}
         apikey={GOOGLE_MAPS_APIKEY}
         strokeWidth={3}
-        strokeColor="black"
+        strokeColor='black'
       />
-      <Marker coordinate={originLoc} title="Origin" />
-      <Marker coordinate={destinationLoc} title="Destination" />
+      <Marker coordinate={originLoc} title='Origin' />
+      <Marker coordinate={destinationLoc} title='Destination' />
     </MapView>
   );
 };

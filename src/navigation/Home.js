@@ -1,9 +1,9 @@
-import React from "react";
-import { createStackNavigator } from "@react-navigation/stack";
+import React from 'react';
+import { createStackNavigator } from '@react-navigation/stack';
 
-import HomeScreen from "../screens/HomeScreen";
-import DestinationSearch from "../screens/DestinationSearch";
-import SearchResults from "../screens/SearchResults";
+import HomeScreen from '../screens/HomeScreen';
+import DestinationSearch from '../screens/DestinationSearch';
+import SearchResults from '../screens/SearchResults';
 
 const Stack = createStackNavigator();
 
@@ -13,9 +13,9 @@ const HomeNavigator = () => (
       headerShown: false,
     }}
   >
-    <Stack.Screen name="Home" component={HomeScreen} />
-    <Stack.Screen name="DestinationSearch" component={DestinationSearch} />
-    <Stack.Screen name="SearchResults" component={SearchResults} />
+    <Stack.Screen name='Home' component={HomeScreen} />
+    <Stack.Screen name='DestinationSearch' component={DestinationSearch} />
+    <Stack.Screen name='SearchResults' component={SearchResults} />
   </Stack.Navigator>
 );
 

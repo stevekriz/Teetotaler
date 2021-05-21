@@ -1,25 +1,25 @@
-import React from "react";
-import { View, Text, Pressable, Image } from "react-native";
+import React from 'react';
+import { View, Text, Pressable, Image } from 'react-native';
 import {
   DrawerContentScrollView,
   DrawerItemList,
-} from "@react-navigation/drawer";
-import { Auth } from "aws-amplify";
-import Entypo from "react-native-vector-icons/Entypo";
-import Steve from "../assets/images/steve.jpeg";
+} from '@react-navigation/drawer';
+import { Auth } from 'aws-amplify';
+import Entypo from 'react-native-vector-icons/Entypo';
+import Steve from '../assets/images/steve.jpeg';
 
-const CustomDrawer = (props) => (
+const CustomDrawer = props => (
   <DrawerContentScrollView {...props}>
-    <View style={{ backgroundColor: "black", padding: 15 }}>
+    <View style={{ backgroundColor: 'black', padding: 15 }}>
       <View
         style={{
-          flexDirection: "row",
-          alignItems: "center",
+          flexDirection: 'row',
+          alignItems: 'center',
         }}
       >
         <View
           style={{
-            backgroundColor: "#cacaca",
+            backgroundColor: '#cacaca',
             width: 50,
             height: 50,
             borderRadius: 25,
@@ -37,13 +37,13 @@ const CustomDrawer = (props) => (
         </View>
         <View
           style={{
-            flexDirection: "column",
+            flexDirection: 'column',
           }}
         >
           <View>
             <Text
               style={{
-                color: "white",
+                color: 'white',
                 fontSize: 24,
                 flex: 1,
                 marginBottom: 5,
@@ -54,14 +54,14 @@ const CustomDrawer = (props) => (
           </View>
           <View
             style={{
-              flexDirection: "row",
+              flexDirection: 'row',
             }}
           >
-            <Text style={{ color: "lightgrey" }}>5.00</Text>
+            <Text style={{ color: 'lightgrey' }}>5.00</Text>
             <Entypo
-              name="star"
+              name='star'
               size={15}
-              color="lightgrey"
+              color='lightgrey'
               style={{ marginLeft: 2 }}
             />
           </View>
@@ -71,39 +71,39 @@ const CustomDrawer = (props) => (
       <View
         style={{
           borderBottomWidth: 1,
-          borderBottomColor: "#919191",
+          borderBottomColor: '#919191',
           borderTopWidth: 1,
-          borderTopColor: "#919191",
+          borderTopColor: '#919191',
           paddingVertical: 5,
           marginVertical: 10,
         }}
       >
         <Pressable
-          onPress={() => console.warn("Messages")}
+          onPress={() => console.warn('Messages')}
           style={{
-            flexDirection: "row",
-            alignItems: "center",
-            justifyContent: "space-between",
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'space-between',
           }}
         >
-          <Text style={{ color: "white", paddingVertical: 5 }}>Messages</Text>
+          <Text style={{ color: 'white', paddingVertical: 5 }}>Messages</Text>
           <Entypo
-            name="chevron-thin-right"
+            name='chevron-thin-right'
             size={15}
-            color="#ffffff"
+            color='#ffffff'
             style={{ marginLeft: 2 }}
           />
         </Pressable>
       </View>
 
-      <Pressable onPress={() => console.warn("Do more with your account")}>
-        <Text style={{ color: "#dddddd", paddingVertical: 5 }}>
+      <Pressable onPress={() => console.warn('Do more with your account')}>
+        <Text style={{ color: '#dddddd', paddingVertical: 5 }}>
           Do more with your account
         </Text>
       </Pressable>
 
-      <Pressable onPress={() => console.warn("Make money driving")}>
-        <Text style={{ color: "white", paddingVertical: 5 }}>
+      <Pressable onPress={() => console.warn('Make money driving')}>
+        <Text style={{ color: 'white', paddingVertical: 5 }}>
           Make money driving
         </Text>
       </Pressable>
@@ -112,7 +112,7 @@ const CustomDrawer = (props) => (
     <DrawerItemList {...props} />
 
     <Pressable onPress={() => Auth.signOut()}>
-      <Text style={{ padding: 5, paddingLeft: 19, color: "red" }}>
+      <Text style={{ padding: 5, paddingLeft: 19, color: 'red' }}>
         Sign Out
       </Text>
     </Pressable>
