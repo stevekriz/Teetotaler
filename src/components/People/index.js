@@ -11,7 +11,7 @@ const People = ({ typeState, onSubmit }) => {
   const [selectedType, setSelectedType] = typeState;
   return (
     <View>
-      {peopleData.map(person => (
+      {peopleData.map((person) => (
         <PersonRow
           key={person.id}
           person={person}

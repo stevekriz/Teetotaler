@@ -3,7 +3,7 @@
   provided that the file names (without extension) are included in the "MODULES" env variable.
   "MODULES" is a comma-delimmited string.
 */
-const moduleNames = process.env.MODULES.split(",");
+const moduleNames = process.env.MODULES.split(',');
 const modules = moduleNames.map((name) => require(`./${name}`));
 
 exports.handler = (event, context, callback) => {

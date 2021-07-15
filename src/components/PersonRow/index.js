@@ -8,7 +8,7 @@ import Jacob from '../../assets/images/Jacob.webp';
 import Aica from '../../assets/images/Aica.webp';
 import styles from './styles';
 
-const PersonRow = props => {
+const PersonRow = (props) => {
   const { person, onPress, isSelected } = props;
 
   const getImage = () => {

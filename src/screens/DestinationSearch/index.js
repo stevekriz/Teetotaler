@@ -57,8 +57,8 @@ const DestinationSearch = () => {
             key: '',
             language: 'en',
           }}
-          renderRow={GooglePlaceData => <PlaceRow data={GooglePlaceData} />}
-          renderDescription={GooglePlaceData =>
+          renderRow={(GooglePlaceData) => <PlaceRow data={GooglePlaceData} />}
+          renderDescription={(GooglePlaceData) =>
             GooglePlaceData.description || GooglePlaceData.vicinity
           }
           predefinedPlaces={[homePlace, workPlace]}
@@ -85,8 +85,8 @@ const DestinationSearch = () => {
             key: '',
             language: 'en',
           }}
-          renderRow={GooglePlaceData => <PlaceRow data={GooglePlaceData} />}
-          renderDescription={GooglePlaceData =>
+          renderRow={(GooglePlaceData) => <PlaceRow data={GooglePlaceData} />}
+          renderDescription={(GooglePlaceData) =>
             GooglePlaceData.description || GooglePlaceData.vicinity
           }
           predefinedPlaces={[homePlace, workPlace]}

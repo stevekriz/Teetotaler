@@ -8,7 +8,7 @@ import { Auth } from 'aws-amplify';
 import Entypo from 'react-native-vector-icons/Entypo';
 import Steve from '../assets/images/steve.jpeg';
 
-const CustomDrawer = props => (
+const CustomDrawer = (props) => (
   <DrawerContentScrollView {...props}>
     <View style={{ backgroundColor: 'black', padding: 15 }}>
       <View
